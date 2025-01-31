@@ -11,7 +11,7 @@ bool green_light = true;
 bool yellow_light = false;     
 
 int current_road = 1;          
-int road_number = 8;
+int road_number = 4;
 
 int glight_time = 4;  
 int ylight_time = 2; 
@@ -93,13 +93,13 @@ int main() {
 
 
     while (true) {
-        cout << "Enter the starting road (1-8): ";
+        cout << "Enter the starting road (1-4): ";
         cin >> starting_road;
 
-        if (starting_road >= 1 && starting_road <= 8) {
+        if (starting_road >= 1 && starting_road <= 4) {
             break; 
         } else {
-            cout << "Invalid input! Please enter a number between 1 and 8.\n";
+            cout << "Invalid input! Please enter a number between 1 and 4.\n";
         }
     }
 
